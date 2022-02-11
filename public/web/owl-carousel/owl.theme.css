@@ -1,0 +1,93 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	text-align: center;
+   
+    margin:0 auto;
+    display: table;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 12px 3px 8px;
+	background:transparent;
+	
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 0px 5px;
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	border:1px solid #9e9e9e;
+	background-color:transparent;
+	
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	background: #000;border:none;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+.owl-prev {
+    position: absolute;
+    top: -70px;
+    right: 31%;
+}
+.owl-prev:after {content: "\f104";color:#fff;font-size:20px;}
+
+.owl-next {
+    position: absolute;
+    top: -70px;
+    right: 25%;
+}
+.owl-next:after {content: "\f105";color:#fff;font-size:20px;}
+
+.owl-prev:hover:after, .owl-next:hover:after  {color:#fff;}
